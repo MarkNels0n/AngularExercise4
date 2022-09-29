@@ -1,0 +1,33 @@
+<!-- <p>Book-item => I am a child!</p> -->
+
+<h2>Book item from service!</h2>
+<div class="container mt-3">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Id Number</th>
+          <th>Name</th>
+          <th>Author/s</th>
+          <th>ISBN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{book?.id}}</td>
+          <td>{{book?.name}}</td>
+          <td>{{book?.authors}}</td>
+          <td>{{book?.isbn}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<div class="container">
+<button class="btn btn-secondary" (click)="sendBook()">Send Book</button>
+<br>
+<button class="btn btn-light" type="button" name="button" (click)="editBook()">Edit</button> 
+<button class="btn btn-light" type="button" name="button" (click)="deleteBook()">Delete</button>
+</div>
+
+<br>
+

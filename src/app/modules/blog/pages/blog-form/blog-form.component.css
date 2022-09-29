@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.ng-valid[required], .ng-valid.required {
+  border-left: 7px solid greenyellow;
+}
+
+.ng-invalid[required], .ng-invalid.required {
+  border-left: 7px solid rgb(226, 113, 75);
+}

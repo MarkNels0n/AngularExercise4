@@ -1,0 +1,13 @@
+<!-- <h3>Book-List => I am a parent!</h3> -->
+<br>
+<h1>Book Page</h1>
+<img src="assets/eagle-logo.png" alt="logo">
+<br>
+
+<button class="btn btn-primary" type="button" name="button" (click)="getBooksFromService()">Show Books from Service</button>
+<br>
+<br>
+
+<div *ngFor="let books of booksReceived">
+    <app-book-item [book]="books" (bookEmitter)="bookAction($event)"></app-book-item>
+</div>
